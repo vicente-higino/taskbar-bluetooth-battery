@@ -4,6 +4,8 @@
 // @description     Displays connected Bluetooth devices and their battery levels on the Windows 11 taskbar system tray
 // @version         1.0.6
 // @author          Vicente Higino
+// @github          https://github.com/vicente-higino
+// @homepage        https://github.com/vicente-higino/taskbar-bluetooth-battery
 // @include         explorer.exe
 // @architecture    x86-64
 // @compilerOptions -lole32 -loleaut32 -lruntimeobject -lversion -lcfgmgr32 -lshell32 -lcomctl32
@@ -2567,6 +2569,7 @@ int WINAPI SystemTrayFrame_MeasureOverride_Hook(
 }
 
 bool HookSystemTraySymbols(HMODULE module) {
+    // SystemTray.dll, Taskbar.View.dll, ExplorerExtensions.dll
     WindhawkUtils::SYMBOL_HOOK symbolHooks[] = {
         {
             {LR"(public: __cdecl winrt::SystemTray::implementation::IconView::IconView(void))"},
