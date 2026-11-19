@@ -13,6 +13,8 @@ Displays currently connected Bluetooth devices and their battery percentages dir
 - **Event-Driven Updates**: Immediately updates when Bluetooth devices connect or disconnect via PnP Configuration Manager notifications (`CM_Register_Notification`), paired with a configurable background polling interval.
 - **Quick Actions**: Clicking the widget opens the Windows 11 Quick Settings Bluetooth flyout (`ms-controlcenter:bluetooth`), Windows Bluetooth Settings (`ms-settings:bluetooth`), or triggers an immediate battery refresh.
 
+![Description of image](https://github.com/vicente-higino/taskbar-bluetooth-battery/blob/master/pic.png)
+
 ## Configuration Settings
 
 | Setting | Options / Default | Description |
